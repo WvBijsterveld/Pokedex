@@ -1,18 +1,27 @@
 body {
   background: url(../img/index_bg2.png) no-repeat;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
 }
 
-h1,
 p {
   color: #fff;
   text-align: center;
+  width: 100%; /* Ensure full width */
+}
+
+.pd-text {
+  color: #fff;
+  position: absolute;
+  left: 40px;
 }
 
 .wlc-msg {
-  font-size: 24px;
-  color: #000;
-  text-align: center;
+  font-size: 64px;
 }
 
 .logout {
@@ -22,23 +31,21 @@ p {
   border-radius: 15px;
   text-decoration: none;
   position: absolute;
+  top: 20px;
   right: 20px;
+}
+
+.logout:hover {
+  background: #dfdfdf;
 }
 
 .search-form {
   text-align: center;
   margin-bottom: 20px;
+  width: 100%;
 }
 
-.search_pokemon {
-  display: inline-block;
-  padding: 10px;
-  background: #fff;
-  border-radius: 5px;
-  color: #000;
-  border: none;
-}
-
+.search_pokemon,
 .search_button {
   display: inline-block;
   padding: 10px;
@@ -57,7 +64,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-around; /* Adjust as needed */
+  justify-content: space-around;
+  flex: 1;
 }
 
 .pokemon {
@@ -65,7 +73,7 @@ p {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
-  width: 200px; /* Adjust as needed */
+  width: 200px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -77,4 +85,40 @@ p {
 .pokemon-image {
   max-width: 100px;
   max-height: 100px;
+}
+
+.leader_board {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.leader_board,
+.leader_board-data {
+  background: #fff;
+  width: 200px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.leader_board-data {
+  background: #000;
+  color: #fff;
+  padding: 2px;
+}
+
+.leader_board-names {
+  background: #fff;
+  color: #000;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.leader_board-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
 }

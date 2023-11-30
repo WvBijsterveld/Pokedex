@@ -42,3 +42,13 @@ function random_num($length)
 
     return $text;
 }
+
+require_once 'db.php';
+
+function display_data() {
+    global $con;
+    $query = "SELECT * FROM users ORDER BY pokemons DESC";
+    $result = mysqli_query($con, $query);
+
+    return $result;
+}
