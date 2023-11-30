@@ -1,0 +1,80 @@
+body {
+  background: url(../img/index_bg2.png) no-repeat;
+  background-size: cover;
+}
+
+h1,
+p {
+  color: #fff;
+  text-align: center;
+}
+
+.wlc-msg {
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+}
+
+.logout {
+  padding: 15px;
+  color: #000;
+  background: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+}
+
+.search-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search_pokemon {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  border: none;
+}
+
+.search_button {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  border: none;
+}
+
+.search_button:hover {
+  background: #dfdfdf;
+  cursor: pointer;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.pokemon {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pokemon-image {
+  max-width: 100px;
+  max-height: 100px;
+}

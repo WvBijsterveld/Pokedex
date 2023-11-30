@@ -1,0 +1,56 @@
+body {
+  background: url(../img/login_bg.png) no-repeat;
+  background-size: cover;
+}
+
+#text {
+  border-radius: 5px;
+  padding: 4px;
+  border: solid thin transparent;
+  width: calc(100% - 10px);
+  border-radius: 10px;
+}
+
+#button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 100px;
+  color: #000;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: none;
+}
+
+#box {
+  position: relative;
+  background-color: rgba(56, 101, 172, 0.9);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 300px;
+  padding: 20px;
+  top: 400px;
+  box-shadow: 0 0 40px 20px #000;
+}
+
+.wrong {
+  display: flex;
+  position: absolute;
+  color: #fff;
+  background: rgba(255, 0, 0, 0.85);
+  padding: 20px 103px;
+  left: 50%;
+  top: 665px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2.5px #000;
+}
+
+.user-pass {
+  padding: 20px 61.25px;
+}
+
+a {
+  color: #fff;
+  text-align: center;
+}
